@@ -168,3 +168,28 @@ buttons.dot.onclick = function(){
         display.add('.')
     }
 }
+
+window.onkeydown = function(event){
+    if(parseInt(event.key) || event.key == 0){
+        Array.from(buttons.numbers).forEach(x => {
+            if (event.key == x.innerHTML) x.onclick()
+        })
+    }
+    if(event.key == '.'){
+        buttons.dot.onclick()
+    }
+    if('+-*/'.includes(event.key)){
+        Array.from(buttons.operators).forEach(x =>{
+            if(event.key == x.innerHTML) x.onclick()
+        })
+    }
+    if(event.key == 'Enter'){
+        buttons.equal.onclick()
+    }
+    if(event.key == 'Escape'){
+        console.log('esc')
+        buttons.clear.onclick()
+    }
+    
+    console.log(event.key)
+}
