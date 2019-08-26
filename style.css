@@ -1,3 +1,11 @@
+body {
+  background: rgb(255,255,255);
+  background: radial-gradient(
+    circle, 
+    rgba(255,255,255,1) 0%, 
+    rgba(1,130,150,1) 100%);
+  }
+
 #calc {
   display: grid;
   width: 500px;
@@ -18,9 +26,9 @@
 
 #buttons * {
   border-radius: 10px;
-  background-color: #aaf;
   font-size: 30px;
   font-weight: bold;
+  outline: none;
 }
 
 #display {
@@ -40,4 +48,25 @@
   font-size: 40px;
   padding: 1px;
   margin: auto;
+}
+
+.operator {
+  background-color: #ffa;
+}
+
+.number {
+  background-color: #aaf;
+}
+
+#plus {
+  background-color: #f55;
+}
+
+#equal {
+  background-color: #222;
+  color: #eee
+}
+
+#clear {
+  background-color: #aff;
 }
