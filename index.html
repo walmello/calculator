@@ -4,38 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='style.css'>
   </head>
   <body>
-   <div id="app">
-     <input type="text" value='0'> 
-     <div id="numbers">
-        <div>
-         <button id="n7">7</button>
-         <button id='n8'>8</button>
-         <button id='n9'>9</button>
-         <button>/</button>
-       </div>
-       <div>
-         <button id='n4'>4</button>
-         <button id='n5'>5</button>
-         <button id='n6'>6</button>
-         <button>*</button>
-       </div>
-       <div>
-         <button id="n3">3</button>
-         <button id='n2'>2</button>
-         <button id='n1'>1</button>
-         <button>-</button>
-       </div>
-       <div>
-         <button id='n0'>0</button>
-         <button id="dot">.</button>
-         <button id='eql'>=</button>
-         <button id="add">+</button>
-       </div>
-    </div>
+   <div id="calc">
+     <div id='buttons'>
+       <div id="display">0</div>
+       <button class="number">7</button>
+       <button class="number">8</button>
+       <button class="number">9</button>
+       <button class="operator" >/</button>
+       <button>CE</button>
+       <button class="number">4</button>
+       <button class="number">5</button>
+       <button class="number">6</button>
+       <button class="operator">*</button>
+       <button class="operator">-</button>
+       <button class="number">1</button>
+       <button class="number">2</button>
+       <button class="number">3</button>
+       <button id="equal" style="grid-row: span 2">=</button>
+       <button class="operator" style="grid-row: span 2">+</button>
+       <button class="number" style="grid-column: span 2">0</button>
+       <button>.</button>
+     </div>
    </div>
-   <script src='script.js'></script> 
+   <script src="script.js"></script>
   </body>
 </html>
